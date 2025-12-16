@@ -1,0 +1,79 @@
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  list-style-type: none;
+
+  &Item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #e0e0e0;
+      box-shadow: 0 1px 7px rgb(0 0 0 / 40%);
+      content: '';
+    }
+  }
+
+  &Temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    height: 50px;
+
+    &Degree {
+      font-weight: 400;
+    }
+  }
+
+  &Descr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+
+    &Icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &Wind {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+  }
+
+  &Pressure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+  }
+
+  &Humidity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    height: 50px;
+  }
+}

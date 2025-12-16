@@ -4,3 +4,20 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+#root {
+  width: 850px;
+  margin: 0 auto;
+  background-color: #fff;
+}
