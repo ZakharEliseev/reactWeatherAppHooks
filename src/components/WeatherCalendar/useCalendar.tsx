@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { DateTimeService } from '../services/dateTimeService';
+import { DateTimeService } from '../../services/dateTimeService';
 import { useGetWeatherQuery } from '../../store/WeatherApi';
 
 import { CalendarProps } from './index';

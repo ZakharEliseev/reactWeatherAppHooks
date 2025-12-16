@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Calendar } from './Calendar';
+import { Calendar } from './WeatherCalendar';
 import { WeatherSearchForm } from './WeatherSearchForm/index';
 
 export const App = () => {

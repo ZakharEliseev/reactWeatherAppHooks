@@ -1,6 +1,6 @@
 import { Circles } from 'react-loader-spinner';
 
-import { GroupedForecast, WeatherEntry } from '../Calendar/useCalendar';
+import { GroupedForecast, WeatherEntry } from '../WeatherCalendar/useCalendar';
 
 import weatherClasses from './index.module.scss';
 
