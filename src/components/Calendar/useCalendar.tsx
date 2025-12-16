@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { DateTimeService } from '../services/dateTimeService';
-import { useGetWeatherQuery } from '../store/WeatherApi';
+import { useGetWeatherQuery } from '../../store/WeatherApi';
 
 import { CalendarProps } from './index';
 

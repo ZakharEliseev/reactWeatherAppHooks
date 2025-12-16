@@ -5,7 +5,6 @@ import { useCalendar } from './useCalendar';
 
 import calendarClasses from './index.module.scss';
 
-
 const dateTimeService = new DateTimeService();
 
 export interface CalendarProps {
@@ -16,6 +15,7 @@ export const Calendar = ({ city }: CalendarProps) => {
   const { days, activeDay, setActiveDay, groupedWeatherData, isFetching, error } = useCalendar({
     city,
   });
+
   return (
     <>
       <ul className={calendarClasses.calendar}>

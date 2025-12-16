@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react';
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Calendar } from './Calendar';
-import {WeatherSearchForm} from './WeatherSearchForm/index';
+import { WeatherSearchForm } from './WeatherSearchForm/index';
 
 export const App = () => {
   const [city, setCity] = useState('');
