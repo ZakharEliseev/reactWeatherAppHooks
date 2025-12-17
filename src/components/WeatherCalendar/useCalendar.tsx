@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { DateTimeService } from '../../services/dateTimeService';
+import { dateTimeService } from '../../services/dateTimeService';
 import { useGetWeatherQuery } from '../../store/WeatherApi';
 
 import { CalendarProps } from './index';
@@ -25,8 +25,6 @@ export interface ForecastResponseItem {
   main: { temp: number; pressure: number; humidity: number };
   weather: Array<{ description: string; icon: string }>;
 }
-
-const dateTimeService = new DateTimeService();
 
 export const useCalendar = ({ city }: CalendarProps) => {
   const { data = { list: [] }, isFetching, error } = useGetWeatherQuery(city, { skip: !city });

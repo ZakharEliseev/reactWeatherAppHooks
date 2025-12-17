@@ -1,11 +1,9 @@
-import { DateTimeService } from '../../services/dateTimeService';
+import { dateTimeService } from '../../services/dateTimeService';
 import { Weather } from '../WeatherForecast';
 
 import { useCalendar } from './useCalendar';
 
 import styles from './index.module.scss';
-
-const dateTimeService = new DateTimeService();
 
 export interface CalendarProps {
   city: string;

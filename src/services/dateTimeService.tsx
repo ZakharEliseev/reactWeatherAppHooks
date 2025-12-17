@@ -27,3 +27,5 @@ export class DateTimeService {
     return month[0].toUpperCase() + month.slice(1);
   };
 }
+
+export const dateTimeService = new DateTimeService();
