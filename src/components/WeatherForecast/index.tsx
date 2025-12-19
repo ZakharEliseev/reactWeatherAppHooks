@@ -1,15 +1,10 @@
 import { Circles } from 'react-loader-spinner';
 
-import { GroupedForecast, WeatherEntry } from '../WeatherCalendar/useCalendar';
+import { WeatherEntry } from '../WeatherCalendar/types';
+
+import { Props } from './types';
 
 import classes from './index.module.scss';
-
-interface Props {
-  forecast: GroupedForecast;
-  activeDay: any;
-  isFetching: boolean;
-  error: { data: { cod: string; message: string } };
-}
 
 const Loader = () => (
   <ul className={classes.weather}>

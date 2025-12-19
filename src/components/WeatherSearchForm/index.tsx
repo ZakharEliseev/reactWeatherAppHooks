@@ -1,12 +1,10 @@
 import { useState } from 'react';
 
+import { Props } from './types';
+
 import styles from './index.module.scss';
 
-interface WeatherSearchFormProps {
-  onSetCity: (cityName: string) => void;
-}
-
-export const WeatherSearchForm = ({ onSetCity }: WeatherSearchFormProps) => {
+export const WeatherSearchForm = ({ onSetCity }: Props) => {
   const [inputValue, setInputValue] = useState('');
 
   return (

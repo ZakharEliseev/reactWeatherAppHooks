@@ -1,15 +1,12 @@
 import { dateTimeService } from '../../services/dateTimeService';
 import { Weather } from '../WeatherForecast';
 
+import { Props } from './types';
 import { useCalendar } from './useCalendar';
 
 import styles from './index.module.scss';
 
-export interface CalendarProps {
-  city: string;
-}
-
-export const Calendar = ({ city }: CalendarProps) => {
+export const Calendar = ({ city }: Props) => {
   const { days, activeDay, setActiveDay, groupedWeatherData, isFetching, error } = useCalendar({
     city,
   });
